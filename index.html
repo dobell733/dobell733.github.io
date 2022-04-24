@@ -24,7 +24,7 @@
   <nav>
   
   <div class=banner>
-    <img src="https://media-exp1.licdn.com/dms/image/C5603AQFSNhqtS5bHbg/profile-displayphoto-shrink_200_200/0/1526745315099?e=1640822400&v=beta&t=xXan2ZGptVv8oCCsnkqgO3SY5URNDqZrHym3mp7bpQg" alt="Dominic Bell">
+    <img src="./resources/images/Portfolio_Image.jfif" alt="Dominic Bell">
     <h2>Dominic Bell</h2>
   </div>
     
@@ -33,12 +33,13 @@
     <div id="about">
       <h2>About Me</h2>
       <br>
-      <p>Hi, I'm Dominic. Nice to meet you. I am a software engineer that strives to learn anything and everything I can about writing clean, elegant, and efficient code. Much of my professional experience until recently has been in the administrative side of the health care field. However, in early 2021, I found and became passionate about the idea of learning to become a software developer and enter the computer science world. All of my experience so far has been self-taught but I am also starting a Post-Bacc Computer Science Program at Oregon State University in March of 2022.</p>
+      <p>Hi, I'm Dominic. Nice to meet you. I am a software engineer that strives to learn anything and everything I can about writing clean, elegant, and efficient code. Much of my professional experience until recently has been in the administrative side of the health care field. However, in early 2021, I found and became passionate about the idea of learning to become a software developer and enter the computer science world. I spent about a year self-learning on Codecademy and officially started a Post-Bacc Computer Science Program at Oregon State University in March of 2022.</p>
     </div>
 
     <div id="skills">
       <h2>Skills</h2>
       <br>
+      <img src="./resources/images/Python_Badge.svg" alt="Python Logo"/>
       <img src="./resources/images/HTML5_Badge.svg" alt="HTML 5 Logo"/>
       <img src="./resources/images/CSS3_Badge.svg" alt="CSS 3 Logo"/>
       <img src="./resources/images/Javacript_Badge.svg" alt="Javascript Logo"/>
@@ -52,9 +53,13 @@
     <h2>Projects</h2>
     <br>
       <ul>
-        <a href="https://dobell733.github.io/desert_family_home_health/" target="_blank" rel="noopener noreferrer"><li>Desert Family Home Health Website</li></a>
+        <button onclick="togglePicture()"><li class="title">Desert Family Home Health Website</li></button>
+        <br>
+        <a href="https://dobell733.github.io/desert_family_home_health/" target="_blank" rel="noopener noreferrer"><li class="supporting"><img src="./resources/images/DFHH_Badge.png" id="DFHH"></li></a>
       </ul>
   </div>
+
+  <script src="./script/script.js"></script>
 
   <footer>
     <p>&copy 2021 Dominic Bell</p>

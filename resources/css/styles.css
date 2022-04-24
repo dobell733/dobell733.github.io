@@ -92,14 +92,30 @@ header h1 a:hover {
     grid-template-columns: 500px;
 }
 
-#projects li {
+#projects .title {
     list-style-type: none;
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+#projects .supporting {
+    list-style-type: none;
+}
+
+#projects img {
+    display: none;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.658);
 }
 
 #projects a:link, #projects a:visited, #projects a:active {
     color: black;
     text-decoration: none;
+}
+
+#projects a:hover {
+    color:#014c8f
 }
 
 footer {
@@ -139,7 +155,19 @@ footer {
     align-items: center; 
 }
 
-@media only screen and (max-width: 1800px) { 
+button {
+    border: none;
+    background-color: white;
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+button:hover {
+    color: #014c8f;
+}
+
+@media only screen and (max-width: 2000px) { 
     #about {
         margin-left: 400px;
     }
@@ -186,6 +214,12 @@ footer {
         padding-top: 50px;
     }
 
+    #projects img {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+
     header li {
         padding: 10px 6px;
     }
@@ -194,4 +228,3 @@ footer {
         padding: 10px 6px;
     }
 }
-
